@@ -70,14 +70,15 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.sony.usb.rc:root/init.sony.usb.rc \
     $(COMMON_PATH)/rootdir/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/sbin/wait4tad_static:root/sbin/wait4tad_static \
+    $(COMMON_PATH)/rootdir/sbin/tad_static:root/sbin/tad_static
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/bin/credmgrfirstboot.sh:system/bin/credmgrfirstboot.sh
 
 # Camera
 PRODUCT_PACKAGES += \
-	tad_static \
-	wait4tad_static \
 	libshims_wvm \
 	libshims_signal \
 	libshims_idd \
