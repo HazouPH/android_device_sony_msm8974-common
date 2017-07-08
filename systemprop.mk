@@ -66,8 +66,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.camera.facialproc=false \
     ro.qc.sdk.gestures.camera=false \
-    camera.disable_zsl_mode=1 \
-    persist.camera.HAL3.enabled=0
+    camera.disable_zsl_mode=1
 
 # CameraAV MM HAL1 hacks
 PRODUCT_PROPERTY_OVERRIDES += \
