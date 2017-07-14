@@ -1,7 +1,7 @@
 # RIL config parameters
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libargs=-d[SPACE]/dev/smd0 \
     rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so \
-    rild.libargs=-d /dev/smd0 \
     ril.subscription.types=NV,RUIM \
     ro.ril.enable.amr.wideband=1 \
     ro.ril.telephony.mqanelements=5
