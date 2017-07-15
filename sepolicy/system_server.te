@@ -5,6 +5,7 @@ allow system_server sysfs_touch:file rw_file_perms;
 allow system_server sysfs_vibrator:file rw_file_perms;
 allow system_server iddd_exec:dir search;
 allow system_server iddd_exec:file { getattr open read };
+allow system_server time_daemon:unix_stream_socket connectto; 
 
 r_dir_file(system_server, sysfs_addrsetup)
 
